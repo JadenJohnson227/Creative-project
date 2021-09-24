@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: red;
+  text-align: center;
+}
+
+.masonry{
+  column-count: 3;
+  column-gap: 1.5em;
+  margin: 1.5em auto;
+  max-width: 768px;
+
+}
+
+.image{
+  /*background-color: #eee;*/
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image img{
+  width:175px;
+  object-fit: cover;
+}
+
+.button{
+  width:175px;
+  margin-top: 20px;
+}
+.home-container{
+  /*background-color: blue;*/
+
+
+}
