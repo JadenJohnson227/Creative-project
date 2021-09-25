@@ -4,81 +4,71 @@
     <meta charset='UTF-8'/>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Merriweather Serif font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- end font import -->
     <title>MTG</title>
     <link rel='stylesheet' href='../css/styles.css'>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Store</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="mtg.html">MTG  <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="books.html">Books</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="video-games.html">Video Games</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <h1>MTG</h1>
-    <!-- Rest of the page content -->
-    <div class='mtg-container'>
-      <div class='masonry'>
-
-        <div class='image'>
-          <h2>Strixhaven</h2>
-          <img src='../images/Strixhaven.png'>
-          <button class='button'>Strixhaven</button>
-        </div>
-        <div class='image'>
-          <h2>Adventures of the Forgotten Realms</h2>
-          <img src='../images/forgotten-realms.png'>
-          <button class='button'>Forgotten Realms</button>
-        </div>
-        <div class='image'>
-          <h2>Midnight Hunt</h2>
-          <img src='../images/midnight-hunt.png'>
-          <button class='button'>Midnight Hunt</button>
-        </div>
-        <div class='image'>
-          <h2>Core 2021</h2>
-          <img src='../images/core-2021.png'>
-          <button class='button'>Core 2021</button>
-        </div>
-        <div class='image'>
-          <h2>Kaldheim</h2>
-          <img src='../images/kaldheim.png'>
-          <button class='button'>Kaldheim</button>
-        </div>
-        <div class='image'>
-          <h2>Zendikar Rising</h2>
-          <img src='../images/zendikar.png'>
-          <button class='button'>Zendikar Rising</button>
-        </div>
-      </div>
-
-    </div>
-
-
-    <hr/>
-    <div class='footer'>
-      <div class='footer-item'>
-        <a href ='https://github.com/JadenJohnson227/Creative-project'>Github repository</a>
-        <p>Jaden Johnson and Tustin Neilson</p>
-      </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <div class='page'>
+      <section class='menu'>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Store</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="mtg.html">MTG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="books.html">Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="video-games.html">Video Games</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      <header><h1>Magic The Gathering</h1></header>
+      <section class='block'>
+          <img class='image' src='../images/Strixhaven.png'>
+          <a href='#'><button class='page-button'>Strixhaven</button></a>
+      </section>
+      <section class='block'>
+          <img class='image' src='../images/forgotten-realms.png'>
+          <a href='#'><button class='page-button'>Forgotten Realms</button></a>
+      </section>
+      <section class='block'>
+          <img class='image' src='../images/midnight-hunt.png'>
+          <a href='#'><button class='page-button'>Midnight Hunt</button></a>
+      </section>
+      <section class='block'>
+          <img class='image' src='../images/core-2021.png'>
+          <a href='#'><button class='page-button'>Core 2021</button></a>
+      </section>
+      <section class='block'>
+          <img class='image' src='../images/kaldheim.png'>
+          <a href='#'><button class='page-button'>Kaldheim</button></a>
+      </section>
+      <section class='block'>
+          <img class='image' src='../images/zendikar.png'>
+          <a href='#'><button class='page-button'>Zendikar Rising</button></a>
+      </section>
+  </div>
+  <footer>
+    <a href ='https://github.com/JadenJohnson227/Creative-project'>Github repository</a>
+    <p>Jaden Johnson and Tustin Neilson</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>

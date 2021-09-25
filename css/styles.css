@@ -2,43 +2,175 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+
+  --gunmetal: #18303a; /* Dark Navy */
+  --dark-slate: #205a5a; /* Dark Greenish Blue */
+  --mango-tango: #ff7e47; /* Pastel Orange */
+  --yellow-crayola: #ffeb99; /* Light Yellow */
+  --cultured: #f5f5f5; /* Off-White */
+  --cultured-dark: #E0E0E0; /* Darker Off-White */
 }
 
-h1{
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-right: 20px;
-  background-color: red;
+/* Menu */
+.bg-dark {
+  background-color: var(--gunmetal) !important;
+}
+
+.navbar-brand h1 {
+  font-size: 1em;
+  color: var(--cultured);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--mango-tango);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--cultured);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--yellow-crayola);
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: var(--gunmetal);
+}
+
+.page {
+  display: grid;
+  background-color: var(--cultured);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "menu"
+    "header"
+    "highlite"
+    "books"
+    "mtg"
+    "vid-games"
+    "footer";
+  grid-gap: 0;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+header {
+  grid-area: header;
+  background-color: var(--dark-slate);
+  color: var(--cultured);
+  padding: 1em;
+}
+
+header h1 {
+  margin: 0px;
+  font-size: 2em;
+  color: var(--mango-tango);
+}
+
+.highlite {
+  grid-area: highlite;
+  background-color: var(--yellow-crayola);
+  height: 10em;
+}
+
+.highlite img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.books {
+  grid-area: books;
+  margin: 1em;
+}
+
+.mtg {
+  grid-area: mtg;
+  margin: 1em;
+}
+
+.video-games {
+  grid-area: vid-games;
+  margin: 1em;
+}
+
+.block {
+  display: flex;
+  padding: 1em;
+  margin: 2em auto;
+  background-color: var(--cultured-dark);
+  border: 0.1em solid var(--mango-tango);
+  border-radius: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 20em;
+  width: 15em;
+}
+
+.block a {
+  margin-top: auto;
+  width: 100%;
+}
+
+.image {
+  object-fit: cover;
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+
+.page-button {
+  width: 100%;
+  height: 5em;
+  align-self: baseline;
+  padding: 0.5em;
+  background-color: var(--dark-slate);
+  color: var(--cultured);
+  text-align: center;
+  text-decoration: none;
+  border: 0px;
+  border-radius: 1em;
+}
+
+.page-button:hover {
+  background-color: var(--gunmetal);
+}
+
+footer {
+  width: 100%;
+  background-color: var(--gunmetal);
+  padding: 1em;
+
+  color: var(--cultured);
   text-align: center;
 }
 
-.masonry{
-  column-count: 3;
-  column-gap: 1.5em;
-  margin: 1.5em auto;
-  max-width: 768px;
-
+footer p {
+  margin: 0.5em 0 0 0;
 }
 
-.image{
-  /*background-color: #eee;*/
-  display: inline-block;
-  margin: 0 0 1em;
-  width: 100%;
-  object-fit: cover;
-}
+@media only screen and (min-width: 800px) {
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "menu menu menu"
+      "header header header"
+      "highlite highlite highlite"
+      "books mtg vid-games"
+      "footer footer footer";
+    grid-gap: 0;
+  }
 
-.image img{
-  width:175px;
-  object-fit: cover;
-}
-
-.button{
-  width:175px;
-  margin-top: 20px;
-}
-.home-container{
-  /*background-color: blue;*/
-
-
+  .highlite {
+    height: 25em;
+  }
 }
