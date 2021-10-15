@@ -75,6 +75,8 @@ header h1 {
   color: var(--mango-tango);
 }
 
+
+
 .highlite {
   grid-area: highlite;
   background-color: var(--yellow-crayola);
