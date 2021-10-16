@@ -159,7 +159,6 @@ footer p {
 
 @media only screen and (min-width: 800px) {
   .page {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "menu menu menu"
