@@ -75,8 +75,6 @@ header h1 {
   color: var(--mango-tango);
 }
 
-
-
 .highlite {
   grid-area: highlite;
   background-color: var(--yellow-crayola);
@@ -144,6 +142,30 @@ header h1 {
 
 .page-button:hover {
   background-color: var(--gunmetal);
+}
+
+#mtg-info {
+  justify-content: flex-start;
+}
+
+#mtg-info form {
+  margin-bottom: 1.75em;
+}
+
+#mtg-info legend {
+  color: var(--dark-slate);
+  font-weight: bold;
+}
+
+#mtg-info button {
+  background-color: var(--dark-slate);
+  color: var(--cultured);
+  padding: 0.25em;
+  border-radius: 10px;
+}
+
+#mtg-info p {
+  color: var(--gunmetal);
 }
 
 footer {

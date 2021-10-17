@@ -21,8 +21,8 @@ function onClick(e) {
       }
       return response.json();
     }).then(function(json) {
-      
-      let results = "<p>Set code: " + json.set["code"]+"</p><p>Set type: "+json.set["type"]+"</p>Set Release Date: " + json.set.releaseDate+"</p>";
+
+      let results = "<p>Set code: " + json.set["code"]+"</p><p>Set type: "+json.set["type"]+"</p><p>Set Release Date:<br>" + json.set.releaseDate+"</p>";
       updateResult(results);
     });
 }
