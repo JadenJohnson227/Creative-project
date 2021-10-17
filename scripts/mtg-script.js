@@ -3,8 +3,7 @@ function onClick(e) {
   // get form values
   let s1 = document.getElementById('set-selector');
   let set1 = s1.options[s1.selectedIndex].value;
-  let s = document.getElementById('selector');
-  let type1 = s.options[s.selectedIndex].value;
+
 
 
 
@@ -22,14 +21,14 @@ function onClick(e) {
       }
       return response.json();
     }).then(function(json) {
-      console.log(type1);
-      let results = json.set[type1];
+      
+      let results = "<p>Set code: " + json.set["code"]+"</p><p>Set type: "+json.set["type"]+"</p>Set Release Date: " + json.set.releaseDate+"</p>";
       updateResult(results);
     });
 }
 
 function updateResult(info) {
-  document.getElementById('result').textContent = info;
+  document.getElementById('result').innerHTML = info;
 }
 
 document.getElementById('submit').addEventListener('click', onClick);
